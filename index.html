@@ -251,8 +251,41 @@ section{
     text-decoration:none;
     font-weight:600;
 }
-
-/* CONTACT */
+/* PRODUCTOS */
+    .products{ 
+        background:#091b33; 
+             }
+    .product-grid{ 
+        display:grid; 
+                  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+                  gap:25px; 
+                 }
+    .product-card{ 
+        background:rgba(255,255,255,.05); 
+                  border:1px solid rgba(255,255,255,.08); 
+                  border-radius:18px;
+                  padding:30px; 
+                  text-align:center; 
+                  transition:.3s; 
+                  height:100%; 
+                 }
+product-card:hover{ 
+    transform:translateY(-8px); 
+    box-shadow:0 0 25px rgba(29,125,255,.25); 
+}
+.product-icon{ 
+    font-size:2.5rem; 
+    margin-bottom:15px;
+}
+.product-card h3{
+    margin-bottom:12px; 
+    font-size:1.3rem;
+}
+.product-card p{ 
+    color:#cfcfcf; 
+    line-height:1.6; 
+}                    
+    /* CONTACT */
 
 .contact-grid{
     display:grid;
@@ -398,6 +431,7 @@ footer{
     <li><a href="#inicio">Inicio</a></li>
     <li><a href="#nosotros">Nosotros</a></li>
     <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#productos">Productos</a></li>
     <li><a href="#contacto">Contacto</a></li>
 </ul>
 
@@ -522,6 +556,118 @@ Brindamos cotizaciones rápidas y atención personalizada para satisfacer sus ne
 </div>
 
 </section>
+<!-- PRODUCTOS -->
+    <div class="section-title">
+<div class="section-title">
+    <span>Nuestro Catálogo</span>
+    <h2>Productos Químicos Industriales</h2>
+    <p>
+        Contamos con una amplia gama de productos químicos para distintas aplicaciones industriales.
+        </p>
+    </div>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-icon">⚗️</div> 
+            <h3>Álcalis</h3> 
+            <p>Sosa cáustica líquida 50%.</p>
+        </div>
+<div class="product-card"> 
+    <div class="product-icon">🧪</div> 
+    <h3>Aminas</h3>
+    <p>Dietanolamina (DEA), Monoetanolamina (MEA) y Trietanolamina (TEA).</p> 
+</div>
+<div class="product-card">
+    <div class="product-icon">🧫</div> 
+    <h3>Espesantes</h3> 
+    <p>Carboximetilcelulosa (CMC), goma guar, goma xantana y celulosa.</p>
+</div>
+<div class="product-card">
+    <div class="product-icon">🕯️</div> 
+    <h3>Parafinas</h3> 
+    <p>Parafina Wax FR 5860, Parafina Wax FR 56 y Parafina Wax 54.</p>
+</div>
+<div class="product-card"> 
+            <div class="product-icon">🎨</div> 
+            <h3>Pigmentos Inorgánicos</h3>
+            <p>Dióxido de titanio TC43.</p> 
+        </div>
+<div class="product-card"> 
+    <div class="product-icon">🧴</div>
+    <h3>Polioles</h3> 
+    <p>Graf y convencional.</p> 
+</div>
+<div class="product-card"> 
+    <div class="product-icon">🫧</div>
+    <h3>Tensoactivos</h3>
+    <p>Ácido dodecilbencensulfónico (ADBS), alcoholes laúricos etoxilados, amida de coco, betaína, LESS 70%, nonil fenol etoxilado y PEG.</p>
+</div>
+<div class="product-card"> 
+    <div class="product-icon">🍶</div> 
+    <h3>Alcoholes</h3> 
+    <p>Butílico, etílico, anhidro, isopropílico, metílico, n-propílico y bencílico.</p>
+</div>
+<div class="product-card"> 
+    <div class="product-icon">💧</div> 
+    <h3>Cetonas</h3> <p>Acetona, ciclohexanona, MEK y MIBK.</p> 
+</div>
+<div class="product-card"> 
+    <div class="product-icon">🔬</div> 
+    <h3>Clorados</h3> <p>Cloruro de metileno y percloroetileno.</p> 
+</div>
+<div class="product-card"> 
+    <div class="product-icon">🧬</div>
+    <h3>Glicoles</h3> 
+    <p>Dietilenglicol, monoetilenglicol, trietilenglicol, monopropilenglicol, dipropilenglicol y más.</p> 
+</div>
+    <div class="product-card">
+        <div class="product-icon">⛽</div> 
+        <h3>Hidrocarburos Alifáticos</h3> 
+        <p>Exxol D60, ciclohexano, heptano, hexano, mineral spirit, gas nafta y varsol.</p> 
+    </div>
+    <div class="product-card">
+        <div class="product-icon">🛢️</div>
+        <h3>Hidrocarburos Aromáticos</h3> 
+        <p>Aromina 100 y 150, tolueno y xileno.</p> 
+    </div>
+<div class="product-card">
+    <div class="product-icon">🧴</div>
+    <h3>Ésteres Alifáticos</h3> 
+    <p>Acetato de butilo, etilo, isopropilo y n-propilo.</p> 
+</div>
+<div class="product-card">
+    <div class="product-icon">🧼</div> 
+    <h3>Glicoéteres</h3> 
+    <p>Butil carbitol y butil cellosolve.</p> 
+</div>
+<div class="product-card">
+    <div class="product-icon">🧱</div> 
+    <h3>Acrilatos</h3>
+    <p>Acrilato de butilo, acrilato acrílico glacial, acrilato de etilo y acrilato 2-etil hexilo.</p> 
+</div>
+<div class="product-card"> 
+    <div class="product-icon">🔗</div> 
+    <h3>Monómeros</h3>
+    <p>Acetato de vinilo (VAM), estireno y metil metacrilato.</p>
+</div>
+<div class="product-card">
+    <div class="product-icon">🧩</div> 
+    <h3>Plastificantes</h3> 
+    <p>DIBP, DIOP, DOTP y plastificantes libres de ftalatos.</p> 
+</div>
+<div class="product-card">
+    <div class="product-icon">🩹</div>
+    <h3>Adhesivos</h3> <p>Alcohol polivinílico 0588, 1788 y 2488.</p> 
+</div>
+<div class="product-card"> 
+    <div class="product-icon">🧯</div> 
+    <h3>Anhídridos</h3>
+    <p>Ftálico, maleico, trimelítico y glicerina USP/Kosher.</p> 
+</div> 
+<div class="product-card"> 
+    <div class="product-icon">🛡️</div>
+    <h3>Conservadores</h3>
+    <p>Ácido cítrico.</p> </div>
+    </div>
 
 <!-- CONTACTO -->
 
