@@ -80,6 +80,11 @@ nav ul li a:hover{
 .btn-nav:hover{
     background:#0b61d6;
 }
+    .nav-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
 
 /* HERO */
 
@@ -394,13 +399,17 @@ footer{
 
 @media(max-width:900px){
 
-    nav{
+     nav{
         flex-direction:column;
         gap:20px;
     }
 
     nav ul{
         flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-buttons{
         justify-content:center;
     }
 
@@ -435,9 +444,22 @@ footer{
     <li><a href="#contacto">Contacto</a></li>
 </ul>
 
-<a href="https://wa.me/525571935827" class="btn-nav">
-    Solicitar Cotización
-</a>
+<div class="nav-buttons">
+
+    <a href="https://wa.me/525571935827"
+       class="btn-nav"
+       target="_blank"
+       rel="noopener noreferrer">
+        📱 55 7193 5827
+    </a>
+<a href="https://wa.me/525538240108"
+       class="btn-nav"
+       target="_blank"
+       rel="noopener noreferrer">
+        📱 55 3824 0108
+    </a>
+
+</div>
 
 </nav>
 
